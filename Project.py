@@ -1,6 +1,7 @@
 from datetime import datetime
 from tkinter import *
 from tkcalendar import Calendar
+from PIL import ImageTk, Image
 import csv
 # FORMAT DI TXT: yyyy-dd-mm,desc,val
 
@@ -107,7 +108,7 @@ def additem():
 root = Tk()
 root.geometry("500x510")
 root.title("ExTract: Expense Tracker")
-root.iconbitmap("anya_ded.ico")
+# root.iconbitmap("anya_ded.ico")
 
 # # list isi pengeluaran
 # ex_lst = []
