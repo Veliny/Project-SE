@@ -4,9 +4,9 @@ Assignment SE 23, Infographic:
 –Products / Services (DONE)
 –Products / Services Function (DONE)
 –Products / Services Features (DONE)
-–Key Resources
-–Cost Structure
-–Competitive advantages compared to competitors
+–Key Resources (DONE)
+–Cost Structure (DONE)
+–Competitive advantages compared to competitors (DONE)
 –Key Partnership
 
 Chandra Wijaya - 2301872596
@@ -30,3 +30,12 @@ menambah data pengeluaran.
 Fitur get_event yang menampilkan secara spesifik tanggal yang dilih.
 Fitur summary of all expenses yang menghitung secara otomatis jumlah pengeluaran dari semua 
 catatan pengeluaran.
+
+Key Resources:
+Human 		= Our Team, Programmer
+Intellectual 	= Algoritma Penghitungan pengluaran app ExTract
+
+Cost Structure:
+Fixed Costs	= Koneksi Internet, Biaya Tenaga Kerja
+Variable Costs	= Bonus-bonus, Biaya marketing
+
