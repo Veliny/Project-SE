@@ -78,3 +78,11 @@ INSERT INTO Riset_Research VALUES
 
 SELECT * FROM Riset_Research
 WHERE Apakah_anda_berasal_dari_jurusan_Computer_Science = 'Ya'
+
+SELECT 
+	[CS y/n] = Apakah_anda_berasal_dari_jurusan_Computer_Science,
+	[Tau Big data] = Apakah_anda_mengetahui_mengenai_Big_Data,
+	[Bahaya gk] = Apakah_menurut_anda_penggunaan_Big_Data_berbahaya
+FROM Riset_Research
+WHERE
+	Apakah_anda_berasal_dari_jurusan_Computer_Science = 'Ya'
