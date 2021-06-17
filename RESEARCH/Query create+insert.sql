@@ -3,15 +3,15 @@ use riset;
 CREATE TABLE Riset_Research (
     Timestamp VARCHAR(28),
     Username VARCHAR(38),
-    Nama_Lengkap VARCHAR(34),
-    Jenis_Kelamin VARCHAR(22),
-    Apakah_anda_berasal_dari_jurusan_Computer_Science VARCHAR(5),
-    Apakah_anda_mengetahui_mengenai_Big_Data VARCHAR(5),
-    Apakah_menurut_anda_penggunaan_Big_Data_berbahaya VARCHAR(5),
-    Berdasarkan_jawaban_anda_sebelumnya_kenapa VARCHAR(191),
-    Menurut_anda_keamanan_data_anda_adalah_hal_penting VARCHAR(5),
-    menggunakan_big_data_Apakah_akan_menjadi_suatu_hal_yang_baik VARCHAR(5),
-    Berdasarkan_jawaban_anda_sebelumnya_kenapa_1 VARCHAR(486) 
+    NamaLengkap VARCHAR(34),
+    JenisKelamin VARCHAR(22),
+    Jurusan_Computer_Science VARCHAR(5),
+    Tahu_Big_Data VARCHAR(5),
+    Big_Data_Berbahaya VARCHAR(5),
+    Mengapa_Berbahaya VARCHAR(191),
+    Keamanan_Data_Penting VARCHAR(5),
+    Penggunaan_Big_Data VARCHAR(5),
+    Penggunaan_Baik VARCHAR(486) 
 );
 INSERT INTO Riset_Research VALUES
     ('2021/06/12 4:57:23 PM GMT+7',NULL,'Ray xavier','Laki-laki','Tidak','Tidak','Tidak','Tidak tahu','Iya','Ya','Karena aman'),
@@ -77,12 +77,12 @@ INSERT INTO Riset_Research VALUES
 
 
 SELECT * FROM Riset_Research
-WHERE Apakah_anda_berasal_dari_jurusan_Computer_Science = 'Ya'
+WHERE Jurusan_Computer_Science = 'Ya'
 
-SELECT 
-	[CS y/n] = Apakah_anda_berasal_dari_jurusan_Computer_Science,
-	[Tau Big data] = Apakah_anda_mengetahui_mengenai_Big_Data,
-	[Bahaya gk] = Apakah_menurut_anda_penggunaan_Big_Data_berbahaya
-FROM Riset_Research
-WHERE
-	Apakah_anda_berasal_dari_jurusan_Computer_Science = 'Ya'
+ SELECT 
+      Jurusan_Computer_Science AS CSMajor,
+      Tahu_Big_Data AS KnowBigData,
+      Big_Data_Berbahaya AS Dangerous
+    FROM Riset_Research 
+    WHERE
+	    Jurusan_Computer_Science = 'Ya'
