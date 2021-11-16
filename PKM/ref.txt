@@ -1,4 +1,0 @@
-https://www.python.org/doc/essays/blurb/
-https://wiki.python.org/moin/TkInter
-https://pypi.org/project/tkcalendar/
-https://pillow.readthedocs.io/en/stable/
